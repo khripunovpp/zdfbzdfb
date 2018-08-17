@@ -22,8 +22,9 @@ body
 	overflow-x: hidden
 	font-family: $font
 	line-height: 1.4
-	font-size: 14px
+	font-size: 16px
 	background-color: #fff
+	color: #363636
 
 img
 	max-width: 100%	
@@ -173,8 +174,10 @@ select::-ms-expand
 	background-color: #eeedec
 	padding-top: 15px
 	padding-bottom: 150px
+	font-size: 0
 	&__item
 		text-decoration: none
+		display: inline-block
 		&::before
 			@extend %icon
 			font-size: 15px
@@ -283,7 +286,7 @@ select::-ms-expand
 			text-decoration: underline
 
 .b-metrics
-	margin-top: 7px
+	margin-top: 13px
 	&__inner
 		@extend %grid
 	&__left,
@@ -312,14 +315,150 @@ select::-ms-expand
 		font-family: $font2
 		text-transform: uppercase
 		vertical-align: bottom
+	&__views,
+	&__likes,
+	&__dislikes
+		display: inline-block
+		vertical-align: bottom
+		color: #999
+		line-height: 1
+		&::before
+			@extend %icon
+			line-height: 1
+			color: $color
+			display: inline-block
+			margin-right: 5px
+			margin-left: 8px
+	&__views
+		&::before
+			content: '\e90a'
+	&__likes
+		&::before
+			content: '\e909'
+	&__dislikes
+		&::before
+			content: '\e909'
+			transform: rotate(180deg) scale(-1,1)
+			position: relative
+			top: 3px
 
 
+.b-content
+	&__lead
+		font-size: 18px
+		font-weight: 700
+	&__pics
+		font-size: 0
+		overflow: auto
+	&__img
+		display: inline-block
+		width: 49%
+		&:nth-child(even)
+			float: right
+			margin-left: 2%
+	&__text
+		a
+			color: $color
+			font-weight: 700
+			&:hover
+				color: #000
 
+.b-doctorQuote
+	margin: 25px 0
+	padding-bottom: 18px
+	padding-left: 35px
+	border-left: 15px solid $color
+	&__head
+		@extend %grid
+		margin-bottom: 18px
+	&__ava,
+	&__info
+		@extend %part
+		vertical-align: bottom
+	&__ava
+		width: 70px
+	&__info
+		padding-left: 20px
+		font-size: 18px
+	&__name
+		font-weight: 800
+		display: block
+	&__text
+		margin: 0
+		font-size: 18px
+		font-style: italic
 
+.b-link
+	display: table
+	margin: 25px auto
+	font-size: 24px
+	font-family: $font2
+	font-weight: 800
+	color: #000
+	text-decoration: none
+	border-bottom: 2px solid $color
+	transition: all .2s
+	&:hover
+		color: $color
+		border-color: #000
 
-
-
-
+.b-results
+	font-size: 0
+	&__item
+		display: inline-block
+		width: 24%
+		height: 280px
+		background-size: cover
+		background-position: 50% 50%
+		font-size: 14px
+		text-transform: uppercase
+		position: relative
+		&+&
+			margin-left: 1.33333%
+		&--1
+			background-image: url(..img/results1.jpg)
+		&--2
+			background-image: url(..img/results2.jpg)
+		&--3
+			background-image: url(..img/results3.jpg)
+		&--4
+			background-image: url(..img/results4.jpg)
+	&__name
+		display: inline-block
+		background-color: $color
+		font-size: 16px
+		font-weight: 700
+		font-family: $font2
+		line-height: 1
+		padding: 5px
+		margin-right: 8px
+	&__role
+		text-transform: lowercase
+	&__top
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		background-color: #232325
+		color: #fff
+	&__bottom
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		@extend %grid
+		font-family: $font2
+		color: #fff
+		font-weight: 700
+		text-align: center
+	&__before,
+	&__after
+		@extend %part
+		padding: 3px
+	&__before
+		background-color: #232325
+	&__after
+		background-color: $color
 
 
 
