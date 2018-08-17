@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Panton-BlackCaps";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Panton-BlackCaps.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton-BlackCaps.woff") format("woff"), url("../fonts/Panton-BlackCaps.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Panton-LightCaps";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Panton-LightCaps.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton-LightCaps.woff") format("woff"), url("../fonts/Panton-LightCaps.ttf") format("truetype");
+}

@@ -1,0 +1,95 @@
+doctype html
+html
+
+	head
+		meta(charset='utf-8')
+		title
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+		link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,800")
+		link(rel='stylesheet', href='css/fonts.css')
+		link(rel='stylesheet', href='css/style.css')
+		style.
+			*,
+			*::after,
+			*::before {
+				//- outline: 1px solid rgba(255,0,0,.5) !important
+			}
+		script(src="http://ctr-localhost.ru/vlad/jq.js")
+
+	body
+		.w-page
+			.b-header
+				.container
+					.b-header__inner
+						.b-header__left
+							img.b-header__logo(src="img/logo.png", alt="")
+						.b-header__right
+							span.b-header__time
+							span.b-header__date #[script dtime_nums(-1, true)]
+			.b-nav
+				.container
+					.b-nav__list
+						a.b-nav__link.active(href="") Психология
+						a.b-nav__link(href="") Отношения
+						a.b-nav__link(href="") Скандалы
+						a.b-nav__link(href="") Расследования
+						a.b-nav__link(href="") Селебритис
+						a.b-nav__link(href="") Must have
+						a.b-nav__link(href="") Советы
+					a.b-nav__toggle(href="")
+			.b-socials
+				.container
+					.b-socials__list
+						a.b-socials__item.b-socials__item--facebook(href="")
+						a.b-socials__item.b-socials__item--twitter(href="")
+						a.b-socials__item.b-socials__item--instagram(href="")
+						a.b-socials__item.b-socials__item--vk(href="")
+						a.b-socials__item.b-socials__item--youtube(href="")
+						a.b-socials__item.b-socials__item--yandex(href="")
+						a.b-socials__item.b-socials__item--rss(href="")
+			.b-hero
+				.container
+					.b-hero__inner
+						.b-hero__magazineName #[span The ] #[b Hot News]
+						img(src="img/img.png", alt="").b-hero__img
+						h1.b-hero__title #[span Психологи утверждают: ] #[span чем больше у мужчины член,] #[span тем успешнее он по жизни]
+						span.b-hero__watermark  © Фото: Виталий Маслов
+			.b-main
+				.container
+					.b-main__inner
+						.b-main__content
+							.b-metrics
+								.b-metrics__inner
+									.b-metrics__left
+										button.b-metrics__comments
+										span.b-metrics__tag Психология
+									.b-metrics__right
+										span.b-metrics__views 588
+										span.b-metrics__likes 48
+										span.b-metrics__dislikes 1
+							.b-content
+						.b-main__sidebar
+							.b-sidebar
+								h2.b-sidebar__title Новости
+								.b-sidebar__content
+									.b-sidebar__categories
+										a(href="").b-sidebar__category.active Самое читаемое
+										a(href="").b-sidebar__category Недавнее
+									.b-sidebar__list
+										a.b-sidebar__item(href="")
+											span.b-sidebar__link Как увеличить член в домашних условиях. Проверенный метод
+											span.b-sidebar__views 3542
+										a.b-sidebar__item(href="")
+											span.b-sidebar__link Размер имеет значение. Как увеличить член без операций
+											span.b-sidebar__views 2142
+										a.b-sidebar__item(href="")
+											span.b-sidebar__link Новейшая технология увеличения члена за 1 месяц
+											span.b-sidebar__views 2012
+										a.b-sidebar__item(href="")
+											span.b-sidebar__link Хочешь увеличить член?Тогда ты по адресу
+											span.b-sidebar__views 1749
+										a.b-sidebar__more(href="") Все новости
+
+		script(src="js/common.js")
