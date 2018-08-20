@@ -3,19 +3,13 @@ html
 
 	head
 		meta(charset='utf-8')
-		title
+		title Психологи утверждают: чем больше у мужчины член, тем успешнее он по жизни
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
 		meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
 		link(rel='shortcut icon', href='img/favicon.ico', type='image/x-icon')
 		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans:400,800")
 		link(rel='stylesheet', href='css/fonts.css')
 		link(rel='stylesheet', href='css/style.css')
-		style.
-			*,
-			*::after,
-			*::before {
-				//- outline: 1px solid rgba(255,0,0,.5) !important
-			}
 		script(src="http://ctr-localhost.ru/vlad/jq.js")
 
 	body
@@ -39,6 +33,11 @@ html
 						a.b-nav__link(href="") Must have
 						a.b-nav__link(href="") Советы
 					a.b-nav__toggle(href="")
+			.b-breadcrumbs
+				.container
+					.b-breadcrumbs__inner
+						a(href="").b-breadcrumbs__item Главная
+						span.b-breadcrumbs__item Психология
 			.b-socials
 				.container
 					.b-socials__list
@@ -53,8 +52,10 @@ html
 				.container
 					.b-hero__inner
 						.b-hero__magazineName #[span The ] #[b Hot News]
-						img(src="img/img.png", alt="").b-hero__img
-						h1.b-hero__title #[span Психологи утверждают: ] #[span чем больше у мужчины член,] #[span тем успешнее он по жизни]
+						picture
+							source(srcset='img/img-mobile.png', media='(max-width: 991px)').b-hero__img
+							img(src="img/img.png", alt="").b-hero__img
+						h1.b-hero__title #[span Психологи утверждают: ] #[br] #[span чем больше у мужчины член, ] #[span тем успешнее он по жизни]
 						span.b-hero__watermark  © Фото: Виталий Маслов
 			.b-main
 				.container
@@ -72,15 +73,15 @@ html
 							.b-content
 								p.b-content__lead Можно много рассуждать о том, имеет ли значение размер мужского члена. Ответ всегда будет один - ИМЕЕТ! Он оказывает влияние не только на качество сексуальной жизни и число партнерш, а непосредственно на успех. Не верите?
 								p.b-content__text Возьмем знаменитых спортсменов: Криштиану Роналду, Дэвид Бэкхем, Леброн Джеймс - #[b их связывает не только феноменальная спортивная карьера, но и феноменальные размеры главного мужского органа].
-								.b-content__pics.b-content__pics--horizontalonly
+								.b-content__pics
 									img(src="img/img1.jpg", alt="").b-content__img
 									img(src="img/img2.jpg", alt="").b-content__img
 								p.b-content__text Не зря же они постоянно мелькают в рекламе нижнего белья - там есть что показать! Да и бывшая девушка Криштиану Ирина Шейк как-то намекнула, что ее возлюбленный хорош не только на поле, но и в постели. 
-								.b-content__pics.b-content__pics--horizontalonly
+								.b-content__pics
 									img(src="img/img3.jpg", alt="").b-content__img
 									img(src="img/img4.jpg", alt="").b-content__img
 								p.b-content__text Среди популярных актеров тоже много обладателей больших “приборов”: Роберт Дауни - мл., Лиам Ниссон, Джейсон Стэтхем, Марк Уолберг. Думаете, это случайное совпадение? Как бы не так. #[b Успех напрямую зависит от размера члена.]
-								.b-content__pics.b-content__pics--horizontalonly
+								.b-content__pics
 									img(src="img/img5.jpg", alt="").b-content__img
 									img(src="img/img6.jpg", alt="").b-content__img
 								blockquote.b-doctorQuote
@@ -92,13 +93,13 @@ html
 											span.b-doctorQuote__role психолог
 									p.b-doctorQuote__text «Исследования, проведенные моими коллегами из Израиля в 2015 году показали прямую зависимость успеха мужчины от размера полового члена. Все дело в самооценке. У обладателей больших размеров как правило она на высоте. Они без труда находят общий язык с противоположным полом, даже если при этом не отличаются внешними данными; легко устраиваются на работу - собеседования для них не стресс, а очередной повод показать себя. Даже если у них что-то не получается, в голове есть одна мысль: “Зато у меня большой член!”, и проблемы кажутся незначительными.»
 								p.b-content__lead Возникает вопрос, что делать тем, кого природа не наградила размером? Не переживайте, выход есть. И те же самые звезды это доказывают. Ведь далеко не у каждого из них такой размер с рождения. 
-								p.b-content__text Вот, например, Леонардо Дикаприо. На его счету десятки фильмов, он талантливый актер, а вот Оскара никак не мог заполучить. И только в 2016 году ему вручили заветную  статуэтку. Но самое интересное, что именно в этом году папарацци засняли его на отдыхе с подозрительным тюбиком в руках. Лео буквально с ним не расставался. Редакция провела  расследование и узнала, что это средство - #[a(href="") Titan Gel] - гель для увеличения члена. 
-								.b-content__pics.b-content__pics--horizontalonly
+								p.b-content__text Вот, например, Леонардо Дикаприо. На его счету десятки фильмов, он талантливый актер, а вот Оскара никак не мог заполучить. И только в 2016 году ему вручили заветную  статуэтку. Но самое интересное, что именно в этом году папарацци засняли его на отдыхе с подозрительным тюбиком в руках. Лео буквально с ним не расставался. Редакция провела  расследование и узнала, что это средство - #[a(href="") Titan&nbsp;Gel] - гель для увеличения члена. 
+								.b-content__pics.b-content__pics--onMobileVertical
 									img(src="img/img7.jpg", alt="").b-content__img
 									img(src="img/img8.jpg", alt="").b-content__img
-								a.b-link Узнать больше о Titan Gel
-								p.b-content__text Его создали британские ученые несколько лет назад для “избранных”. Средство стоило огромных денег и позволить себе его могли только миллионеры. Но в прошлом году Дикаприо, вдохновленный своим результатом, решил проспонсировать масштабное производство геля.  Теперь увеличить член и изменить свою жизнь к лучшему может любой мужчина.  #[a(href="") Titan Gel]  продается в открытом доступе на официальном сайте. 
-								.b-content__pics.b-content__pics--horizontalonly
+								.b-link #[a(href="") Узнать больше о&nbsp;Titan&nbsp;Gel]
+								p.b-content__text Его создали британские ученые несколько лет назад для “избранных”. Средство стоило огромных денег и позволить себе его могли только миллионеры. Но в прошлом году Дикаприо, вдохновленный своим результатом, решил проспонсировать масштабное производство геля.  Теперь увеличить член и изменить свою жизнь к лучшему может любой мужчина.  #[a(href="") Titan&nbsp;Gel]  продается в открытом доступе на официальном сайте. 
+								.b-content__pics.b-content__pics--onMobileVertical
 									img(src="img/img9.jpg", alt="").b-content__img
 									img(src="img/img10.jpg", alt="").b-content__img
 								blockquote.b-doctorQuote
@@ -109,9 +110,9 @@ html
 											span.b-doctorQuote__name Николай Рогов,
 											span.b-doctorQuote__role уролог
 									p.b-doctorQuote__text «Это средство нового поколения. Активные компоненты геля проникают вглубь тканей. Рост полового члена достигается благодаря усилению кровотока и улучшению эластичности тканей. Они растягиваются и увеличиваются естественным путем. #[b Не нужно ожидать каких-то феноменальных результатов, но 3–5 см вам гарантированы.]»
-								p.b-content__text Наша редакция решила провести небольшой эксперимент и проверить, так ли на самом деле эффективен  #[a(href="") Titan Gel]. Мы заказали его на официальном сайте и предложили воспользоваться трем нашим сотрудникам в течение месяца.
+								p.b-content__text Наша редакция решила провести небольшой эксперимент и проверить, так ли на самом деле эффективен  #[a(href="") Titan&nbsp;Gel]. Мы заказали его на официальном сайте и предложили воспользоваться трем нашим сотрудникам в течение месяца.
 								p.b-content__text Конечно, в целях конфиденциальности мы не будем показывать их лица. А вот результат вы можете оценить. #[b Прирост составил от 2,5 до 5 см!]
-								p.b-content__text #[b Достигнутые результаты от использования #[a(href="") Titan Gel]]
+								p.b-content__text #[b Достигнутые результаты от использования #[a(href="") Titan&nbsp;Gel]]
 								ul.b-results
 									li.b-results__item.b-results__item--1
 										.b-results__top
@@ -142,7 +143,209 @@ html
 											.b-results__before #[span B] #[b 15 cm]
 											.b-results__after #[span A] #[b 18 cm]
 								p.b-content__text Один из четырех сотрудников после нашего эксперимента уже нашел себе девушку, а второй пошел на повышение. #[b Большой член открывает для мужчин новые возможности!]
-								a.b-link(href="") Заказать Titan Gel
+								.b-link #[a(href="") Заказать Titan&nbsp;Gel]
+							.b-comments
+								.b-comments__header
+									h2.b-comments__title Комментарии
+									span.b-comments__count 18
+								ul.b-comments__list
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava1.jpg", alt="")
+											span.b-comment__name Kate003
+											span.b-comment__date #[script dtime_nums(-14, true)]
+										p.b-comment__text 100% согласна с этим. у нас на работе начальник, так у него такой член, аж из штанов выпирает. я когда захожу к нему в кабинет, больше ни на что смотреть не могу. но дело не в этом. Он в свои 25 лет уже коммерческий директор фирмы. очень уверенный в себе, может так отчитать, мало не покажется. я так и представляю как он наказывает меня на своем столе)))
+										.b-comment__footer
+											span.b-comment__likes 48
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava2.jpg", alt="")
+											span.b-comment__name Nike+
+											span.b-comment__date #[script dtime_nums(-13, true)]
+										p.b-comment__text Ну конечно придает уверенности, когда у тебя в штанах здоровый болт. мне с этим повезло.
+										img(src="img/comment1.jpg", alt="").b-comment__img
+										.b-comment__footer
+											span.b-comment__likes 154
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava3.jpg", alt="")
+											span.b-comment__name Fuck That
+											span.b-comment__date #[script dtime_nums(-12, true)]
+										p.b-comment__text помню фильм какой-то с Марком Уолбергом, он там свой член вывалил. если это не фотошоп, он у него просто огромный. 
+										.b-comment__footer
+											span.b-comment__likes 15
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava4.jpg", alt="")
+											span.b-comment__name Stasos
+											span.b-comment__date #[script dtime_nums(-11, true)]
+										p.b-comment__text насчет #[a(href="") Titan&nbsp;Gel] могу рассказать свою историю. сначала хотел увеличить член с помощью операции, но мне сразу сказали, что могут быть последствия. решил сначала гелем попробовать. скажу так, первое время никакого эффекта, легкие покалывания. недели две вообще ничего не росло. потом резко начался прирост. за 2 месяца, что им пользовался член вырос на 3,2 см. приятно.
+										img(src="img/comment2.jpg", alt="").b-comment__img
+										.b-comment__footer
+											span.b-comment__likes 15
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava5.jpg", alt="")
+											span.b-comment__name Facundo
+											span.b-comment__date #[script dtime_nums(-11, true)]
+										p.b-comment__text ага, видел эти фотки Лео в какой-то газете. ну че, он красавчик, не только себе помог, но и людям. своего рода благотворительность.
+										.b-comment__footer
+											span.b-comment__likes 10
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava6.jpg", alt="")
+											span.b-comment__name Viola
+											span.b-comment__date #[script dtime_nums(-10, true)]
+										p.b-comment__text Обожаю Криштиану!!!! когда он на поле, я всегда смотрю ему только на одно место. Представляю, что у него в штанах за гигант.
+										.b-comment__footer
+											span.b-comment__likes 50
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava7.jpg", alt="")
+											span.b-comment__name Nord67
+											span.b-comment__date #[script dtime_nums(-9, true)]
+										p.b-comment__text я много лет играл в городской команде по футболу. в раздевалке понятное дело все у всех видел. и реально, у тех пацанов, которые показывали лучшие результаты и в дальнейшем продвинулись, члены больше чем у остальных. раньше даже не задумывался об этом.
+										.b-comment__footer
+											span.b-comment__likes 17
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava8.jpg", alt="")
+											span.b-comment__name Natalie
+											span.b-comment__date #[script dtime_nums(-8, true)]
+										p.b-comment__text теперь понятно почему мой муж такой неудачник по жизни…..
+										.b-comment__footer
+											span.b-comment__likes 5
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava9.jpg", alt="")
+											span.b-comment__name Mike
+											span.b-comment__date #[script dtime_nums(-7, true)]
+										p.b-comment__text да понятное дело, что актеры себе увеличивают, у многих же постельные сцены, маленький член там не прокатит. А вот зачем это спортсменам, непонятно
+										.b-comment__footer
+											span.b-comment__likes 31
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava10.jpg", alt="")
+											span.b-comment__name nina009
+											span.b-comment__date #[script dtime_nums(-6, true)]
+										p.b-comment__text У Леонардо точно раньше был очень маленький. Помню еще в 90-х какая-то модель с ним спала и потом слила инфу журналистам. наверно, поэтому у него постоянных отношений не было. молодец, что смог решить свою проблему. 
+										.b-comment__footer
+											span.b-comment__likes 42
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava11.jpg", alt="")
+											span.b-comment__name Pepper
+											span.b-comment__date #[script dtime_nums(-6, true)]
+										p.b-comment__text тоже пользовался #[a(href="") Titan&nbsp;Gel]. На 4 см член вырос, хотелось бы побольше, но все равно нормально.
+										img(src="img/comment3.jpg", alt="").b-comment__img
+										.b-comment__footer
+											span.b-comment__likes 67
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava12.jpg", alt="")
+											span.b-comment__name Milana
+											span.b-comment__date #[script dtime_nums(-5, true)]
+										p.b-comment__text Представляю какой огромный у Леброна. У афроамериканцев вообще у всех большие.
+										.b-comment__footer
+											span.b-comment__likes 80
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment.b-comment--reply
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava13.jpg", alt="")
+											span.b-comment__name Helen
+											span.b-comment__date #[script dtime_nums(-4, true)]
+										p.b-comment__text а по-моему все это ерунда. если у мужчины голова работает, верхняя а не нижняя, он будет успешным. а если он тупой, никакой член ему не поможет
+										.b-comment__footer
+											span.b-comment__likes 5
+											span.b-comment__dislikes 9
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava14.jpg", alt="")
+											span.b-comment__name Rozii
+											span.b-comment__date #[script dtime_nums(-3, true)]
+										p.b-comment__text Я сама купила для мужа #[a(href="") Titan&nbsp;Gel]. Сказала ему, что это обычная смазка. Он сам не понял, как у него член на 2 см вырос, пришлось потом рассказать. Но зато у нас теперь секс просто невероятный!
+										img(src="img/comment4.jpg", alt="").b-comment__img
+										.b-comment__footer
+											span.b-comment__likes 158
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava15.jpg", alt="")
+											span.b-comment__name Sanek
+											span.b-comment__date #[script dtime_nums(-2, true)]
+										p.b-comment__text про миллионеров тоже где-то читал, что у всех здоровые члены. чем больше член, тем выше строчка Форбс))
+										.b-comment__footer
+											span.b-comment__likes 24
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+									li.b-comments__item.b-comment.b-comment--reply
+										.b-comment__header
+											.b-comment__ava
+												img(src="img/ava16.jpg", alt="")
+											span.b-comment__name Tanya
+											span.b-comment__date #[script dtime_nums(-2, true)]
+										p.b-comment__text Я когда в институте училась на психологии нам рассказывали об этом феномене. Много экспериментов проводили и действительно у тех, у кого большой член, по жизни все складывается лучше чем у тех, у кого маленький. даже статистика есть
+										.b-comment__footer
+											span.b-comment__likes 69
+											span.b-comment__dislikes 0
+											a.b-comment__reply(href="") Ответить
+											a.b-comment__more(href="") Еще
+							.b-link #[a(href="") Заказать Titan&nbsp;Gel]
 						.b-main__sidebar
 							.b-sidebar
 								h2.b-sidebar__title Новости
@@ -164,4 +367,9 @@ html
 											span.b-sidebar__link Хочешь увеличить член?Тогда ты по адресу
 											span.b-sidebar__views 1749
 										a.b-sidebar__more(href="") Все новости
+			.b-footer
+				.container
+					.b-footer__inner
+						p.b-footer__copyright © Copyright #[span.ryear]
+		script(src="js/bxslider.js")
 		script(src="js/common.js")
