@@ -165,7 +165,7 @@ $(function() {
 		setTime('.b-header__time')
 		scroll('.b-metrics__comments', '.b-comments__header')
 		toggleNav()
-		_bxInnit('.b-results', {
+		_bxInnit('.b-results__list', {
 				view: 'mobile',
 				adaptiveHeight: true,
 				swipeThreshold: 40,
