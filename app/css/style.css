@@ -6,7 +6,7 @@
   font-style: normal;
 }
 
-.b-socials__item::before, .b-sidebar__views::before, .b-metrics__comments::before, .b-metrics__views::before, .b-metrics__likes::before, .b-metrics__dislikes::before, .b-comments__count::before, .b-comment__likes::before, .b-comment__dislikes::before {
+.b-nav__toggle::before, .b-socials__item::before, .b-sidebar__views::before, .b-metrics__comments::before, .b-metrics__views::before, .b-metrics__likes::before, .b-metrics__dislikes::before, .b-comments__count::before, .b-comment__likes::before, .b-comment__dislikes::before {
   font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
@@ -105,6 +105,7 @@ select::-ms-expand {
 
 .b-header__time {
   color: #ff1d3d;
+  margin-right: 10px;
 }
 
 .b-nav {
@@ -158,6 +159,15 @@ select::-ms-expand {
   position: absolute;
   bottom: -16px;
   left: 50%;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  line-height: 14px;
+}
+
+.b-nav__toggle::before {
+  content: '\e907';
+  font-size: 10px;
 }
 
 .b-hero {
@@ -299,6 +309,7 @@ select::-ms-expand {
 .b-sidebar__title {
   font-size: 18px;
   font-family: "Panton-BlackCaps", sans-serif;
+  font-weight: 500;
   text-transform: uppercase;
   margin: 0;
   color: #ff1d3d;
@@ -796,7 +807,7 @@ select::-ms-expand {
 
 @media only screen and (max-width: 991px) {
   .container {
-    max-width: 320px;
+    max-width: 640px;
   }
   .b-header {
     text-align: center;
@@ -849,16 +860,16 @@ select::-ms-expand {
     background-color: transparent;
   }
   .b-hero__magazineName {
-    width: 80px;
-    height: 69px;
-    top: -24px;
-    left: -20px;
-    padding-top: 47px;
-    padding-left: 12px;
+    width: 141px;
+    height: 121px;
+    top: -42px;
+    left: -35px;
+    padding-top: 83px;
+    padding-left: 28px;
   }
   .b-hero__magazineName span,
   .b-hero__magazineName b {
-    font-size: 10px;
+    font-size: 13px;
   }
   .b-main__sidebar {
     display: none;
@@ -932,5 +943,20 @@ select::-ms-expand {
   }
   .b-comments__item:nth-child(-n+10) {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .b-hero__magazineName {
+    width: 126px;
+    height: 94px;
+    top: -41px;
+    left: -37px;
+    padding-top: 66px;
+    padding-left: 24px;
+  }
+  .b-hero__magazineName span,
+  .b-hero__magazineName b {
+    font-size: 10px;
   }
 }

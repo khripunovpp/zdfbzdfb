@@ -79,6 +79,7 @@ select::-ms-expand
 		text-align: right
 	&__time
 		color: $color
+		margin-right: 10px
 
 .b-nav
 	position: relative
@@ -117,6 +118,14 @@ select::-ms-expand
 		position: absolute
 		bottom: -16px
 		left: 50%
+		color: #fff
+		text-decoration: none
+		text-align: center
+		line-height: 14px
+		&::before
+			content: '\e907'
+			@extend %icon
+			font-size: 10px
 
 .b-hero
 	margin-top: -140px
@@ -228,6 +237,7 @@ select::-ms-expand
 	&__title
 		font-size: 18px
 		font-family: $font2
+		font-weight: 500
 		text-transform: uppercase
 		margin: 0
 		color: $color
